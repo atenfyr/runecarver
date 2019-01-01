@@ -1,7 +1,7 @@
-Adds six new weapons which can be "empowered" six times as the game progresses.
+Rune Carver adds six new weapons which can be "empowered" six times as the game progresses.
 This mod currently includes:
-    - The Rune Carver, a machine which, given certain materials, carves runes into compatible weapons, making them more powerful 
-    - Exultion, a long spear which can be used for the entire game
+    - The Rune Carver, a machine which, given certain materials, carves runes into compatible weapons, making them more powerful
+    - Exultion, a long spear which can stab your opponents from afar
     - Exodium, a sword which fires a fast-moving projectile
     - Colstice, a shotgun which fires a tight spread of five bullets
     - Cellcrusher, a bow which fires two arrows instead of one
