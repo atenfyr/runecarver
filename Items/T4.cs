@@ -7,10 +7,10 @@ using Microsoft.Xna.Framework;
 
 namespace Upgrader.Items.T4 {
     public class Exodium4 : ModItem {
-		public override void SetStaticDefaults() {
+        public override void SetStaticDefaults() {
             DisplayName.SetDefault("Exodium");
             Tooltip.SetDefault("[c/31D741:Tier IV]");
-		}
+        }
 
         public override void AutoStaticDefaults() {
             Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T4/Exodium");
@@ -19,7 +19,7 @@ namespace Upgrader.Items.T4 {
         public override void SetDefaults() {
             item.melee = true;
             item.width = 36;
-			item.height = 36;
+            item.height = 36;
             item.scale = 2f;
 
             item.useStyle = 1;
@@ -42,7 +42,7 @@ namespace Upgrader.Items.T4 {
         public override void AddRecipes() {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(mod.ItemType("Exodium3"), 1);
-			recipe.AddIngredient(ItemID.ChlorophyteClaymore, 1);
+            recipe.AddIngredient(ItemID.ChlorophyteClaymore, 1);
             recipe.AddIngredient(ItemID.HallowedBar, 12);
             recipe.AddIngredient(ItemID.SoulofMight, 5);
             recipe.AddIngredient(ItemID.SoulofSight, 5);
@@ -51,12 +51,12 @@ namespace Upgrader.Items.T4 {
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
-	}
+    }
 
     public class ExodiumProjectile4 : ModProjectile {
-		public override void SetStaticDefaults() {
+        public override void SetStaticDefaults() {
             DisplayName.SetDefault("Exo Shot");
-		}
+        }
 
         public override void AutoStaticDefaults() {
             Main.projectileTexture[projectile.type] = ModLoader.GetTexture("Upgrader/Items/T4/Exodium_Projectile");
@@ -87,13 +87,13 @@ namespace Upgrader.Items.T4 {
                 Dust.NewDust(projectile.position, 8, 8, mod.DustType("WeaponDust"), 0f, 0f, 0, Constants.DustColors[0], 1.25f);
             }
         }
-	}
+    }
 
     public class Exultion4 : ModItem {
-		public override void SetStaticDefaults() {
+        public override void SetStaticDefaults() {
             DisplayName.SetDefault("Exultion");
             Tooltip.SetDefault("[c/31D741:Tier IV]");
-		}
+        }
 
         public override void AutoStaticDefaults() {
             Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T4/Exultion");
@@ -101,8 +101,8 @@ namespace Upgrader.Items.T4 {
 
         public override void SetDefaults() {
             item.width = 64;
-			item.height = 64;
-			item.maxStack = 1;
+            item.height = 64;
+            item.maxStack = 1;
             item.rare = 5;
             item.useStyle = 5;
             item.scale = 1.1f;
@@ -124,7 +124,7 @@ namespace Upgrader.Items.T4 {
         public override void AddRecipes() {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(mod.ItemType("Exultion3"), 1);
-			recipe.AddIngredient(ItemID.ChlorophytePartisan, 1);
+            recipe.AddIngredient(ItemID.ChlorophytePartisan, 1);
             recipe.AddIngredient(ItemID.HallowedBar, 12);
             recipe.AddIngredient(ItemID.SoulofMight, 5);
             recipe.AddIngredient(ItemID.SoulofSight, 5);
@@ -135,14 +135,14 @@ namespace Upgrader.Items.T4 {
         }
 
         public override bool CanUseItem(Player player) {
-			return player.ownedProjectileCounts[item.shoot] < 1;
+            return player.ownedProjectileCounts[item.shoot] < 1;
         }
-	}
+    }
 
     public class ExultionProjectile4 : ModProjectile {
-		public override void SetStaticDefaults() {
+        public override void SetStaticDefaults() {
             DisplayName.SetDefault("Exultion");
-		}
+        }
 
         public override void AutoStaticDefaults() {
             Main.projectileTexture[projectile.type] = ModLoader.GetTexture("Upgrader/Items/T4/Exultion_Projectile");
@@ -162,39 +162,39 @@ namespace Upgrader.Items.T4 {
 
         public override void AI() {
             Player projOwner = Main.player[projectile.owner];
-			Vector2 ownerMountedCenter = projOwner.RotatedRelativePoint(projOwner.MountedCenter, true);
-			projectile.direction = projOwner.direction;
-			projOwner.heldProj = projectile.whoAmI;
-			projOwner.itemTime = projOwner.itemAnimation;
-			projectile.position.X = ownerMountedCenter.X - (float)(projectile.width / 2);
-			projectile.position.Y = ownerMountedCenter.Y - (float)(projectile.height / 2);
-			if (!projOwner.frozen) {
-				if (projectile.ai[0] == 0f) {
-					projectile.ai[0] = 3f;
-					projectile.netUpdate = true;
-				}
-				if (projOwner.itemAnimation < projOwner.itemAnimationMax / 3) {
-					projectile.ai[0] -= 2.4f;
-				} else {
-					projectile.ai[0] += 2.1f;
-				}
-			}
-			projectile.position += projectile.velocity * projectile.ai[0];
-			if (projOwner.itemAnimation == 0) {
-				projectile.Kill();
-			}
-			projectile.rotation = projectile.velocity.ToRotation() + MathHelper.ToRadians(135f);
-			if (projectile.spriteDirection == -1) {
-				projectile.rotation -= MathHelper.ToRadians(90f);
+            Vector2 ownerMountedCenter = projOwner.RotatedRelativePoint(projOwner.MountedCenter, true);
+            projectile.direction = projOwner.direction;
+            projOwner.heldProj = projectile.whoAmI;
+            projOwner.itemTime = projOwner.itemAnimation;
+            projectile.position.X = ownerMountedCenter.X - (float)(projectile.width / 2);
+            projectile.position.Y = ownerMountedCenter.Y - (float)(projectile.height / 2);
+            if (!projOwner.frozen) {
+                if (projectile.ai[0] == 0f) {
+                    projectile.ai[0] = 3f;
+                    projectile.netUpdate = true;
+                }
+                if (projOwner.itemAnimation < projOwner.itemAnimationMax / 3) {
+                    projectile.ai[0] -= 2.4f;
+                } else {
+                    projectile.ai[0] += 2.1f;
+                }
+            }
+            projectile.position += projectile.velocity * projectile.ai[0];
+            if (projOwner.itemAnimation == 0) {
+                projectile.Kill();
+            }
+            projectile.rotation = projectile.velocity.ToRotation() + MathHelper.ToRadians(135f);
+            if (projectile.spriteDirection == -1) {
+                projectile.rotation -= MathHelper.ToRadians(90f);
             }
         }
-	}
+    }
 
     public class Colstice4 : ModItem {
-		public override void SetStaticDefaults() {
+        public override void SetStaticDefaults() {
             DisplayName.SetDefault("Colstice");
             Tooltip.SetDefault("[c/31D741:Tier IV]");
-		}
+        }
 
         public override void AutoStaticDefaults() {
             Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T4/Colstice");
@@ -204,12 +204,12 @@ namespace Upgrader.Items.T4 {
             item.ranged = true;
             item.noMelee = true;
             item.width = 42;
-			item.height = 20;
+            item.height = 20;
             item.scale = 1.5f;
 
             item.useStyle = 5;
 
-			item.shoot = ProjectileID.Bullet;
+            item.shoot = ProjectileID.Bullet;
             item.useAmmo = AmmoID.Bullet;
             item.UseSound = SoundID.Item36;
             item.autoReuse = true;
@@ -225,21 +225,21 @@ namespace Upgrader.Items.T4 {
         }
 
         public override Vector2? HoldoutOffset() {
-			return new Vector2(0f, 0.1f);
-		}
+            return new Vector2(0f, 0.1f);
+        }
 
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack) {
-			for (int i = 0; i < 6; i++) {
-				Vector2 newSpeed = new Vector2(speedX, speedY).RotatedByRandom(MathHelper.ToRadians(5));
-				Projectile.NewProjectile(position.X, position.Y, newSpeed.X, newSpeed.Y, type, damage, knockBack, player.whoAmI);
-			}
-			return false;
-		}
+            for (int i = 0; i < 6; i++) {
+                Vector2 newSpeed = new Vector2(speedX, speedY).RotatedByRandom(MathHelper.ToRadians(5));
+                Projectile.NewProjectile(position.X, position.Y, newSpeed.X, newSpeed.Y, type, damage, knockBack, player.whoAmI);
+            }
+            return false;
+        }
 
         public override void AddRecipes() {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(mod.ItemType("Colstice3"), 1);
-			recipe.AddIngredient(ItemID.Megashark, 1);
+            recipe.AddIngredient(ItemID.Megashark, 1);
             recipe.AddIngredient(ItemID.HallowedBar, 12);
             recipe.AddIngredient(ItemID.SoulofMight, 5);
             recipe.AddIngredient(ItemID.SoulofSight, 5);
@@ -248,13 +248,13 @@ namespace Upgrader.Items.T4 {
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
-	}
+    }
 
     public class Cellcrusher4 : ModItem {
-		public override void SetStaticDefaults() {
+        public override void SetStaticDefaults() {
             DisplayName.SetDefault("Cellcrusher");
             Tooltip.SetDefault("[c/31D741:Tier IV]");
-		}
+        }
 
         public override void AutoStaticDefaults() {
             Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T4/Cellcrusher");
@@ -264,12 +264,12 @@ namespace Upgrader.Items.T4 {
             item.ranged = true;
             item.noMelee = true;
             item.width = 23;
-			item.height = 40;
+            item.height = 40;
             item.scale = 1.5f;
 
             item.useStyle = 5;
 
-			item.shoot = ProjectileID.WoodenArrowFriendly;
+            item.shoot = ProjectileID.WoodenArrowFriendly;
             item.useAmmo = AmmoID.Arrow;
             item.UseSound = SoundID.Item5;
             item.autoReuse = true;
@@ -285,21 +285,21 @@ namespace Upgrader.Items.T4 {
         }
 
         public override Vector2? HoldoutOffset() {
-			return new Vector2(0f, 2f);
-		}
+            return new Vector2(0f, 2f);
+        }
 
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack) {
-			for (int i = 0; i < 2; i++) {
-				Vector2 newSpeed = new Vector2(speedX, speedY).RotatedByRandom(MathHelper.ToRadians(3));
-				Projectile.NewProjectile(position.X, position.Y, newSpeed.X, newSpeed.Y, type, damage, knockBack, player.whoAmI);
-			}
-			return false;
-		}
+            for (int i = 0; i < 2; i++) {
+                Vector2 newSpeed = new Vector2(speedX, speedY).RotatedByRandom(MathHelper.ToRadians(3));
+                Projectile.NewProjectile(position.X, position.Y, newSpeed.X, newSpeed.Y, type, damage, knockBack, player.whoAmI);
+            }
+            return false;
+        }
 
         public override void AddRecipes() {
             ModRecipe recipe1 = new ModRecipe(mod);
             recipe1.AddIngredient(mod.ItemType("Cellcrusher3"), 1);
-			recipe1.AddIngredient(ItemID.ChlorophyteShotbow, 1);
+            recipe1.AddIngredient(ItemID.ChlorophyteShotbow, 1);
             recipe1.AddIngredient(ItemID.HallowedBar, 12);
             recipe1.AddIngredient(ItemID.SoulofMight, 5);
             recipe1.AddIngredient(ItemID.SoulofSight, 5);
@@ -310,7 +310,7 @@ namespace Upgrader.Items.T4 {
 
             ModRecipe recipe2 = new ModRecipe(mod);
             recipe2.AddIngredient(mod.ItemType("Cellcrusher3"), 1);
-			recipe2.AddIngredient(ItemID.TitaniumRepeater, 1);
+            recipe2.AddIngredient(ItemID.TitaniumRepeater, 1);
             recipe2.AddIngredient(ItemID.HallowedBar, 12);
             recipe2.AddIngredient(ItemID.SoulofMight, 5);
             recipe2.AddIngredient(ItemID.SoulofSight, 5);
@@ -319,14 +319,14 @@ namespace Upgrader.Items.T4 {
             recipe2.SetResult(this, 1);
             recipe2.AddRecipe();
         }
-	}
+    }
 
     public class Ash4 : ModItem {
-		public override void SetStaticDefaults() {
+        public override void SetStaticDefaults() {
             DisplayName.SetDefault("Ash");
             Tooltip.SetDefault("[c/31D741:Tier IV]");
             Item.staff[item.type] = true;
-		}
+        }
 
         public override void AutoStaticDefaults() {
             Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T4/Ash");
@@ -336,12 +336,12 @@ namespace Upgrader.Items.T4 {
             item.magic = true;
             item.noMelee = true;
             item.width = 43;
-			item.height = 43;
+            item.height = 43;
             item.scale = 1.5f;
 
             item.useStyle = 5;
 
-			item.shoot = mod.ProjectileType("AshProjectile4");
+            item.shoot = mod.ProjectileType("AshProjectile4");
             item.UseSound = SoundID.Item43;
             item.autoReuse = true;
             item.value = Item.buyPrice(gold: 16);
@@ -359,7 +359,7 @@ namespace Upgrader.Items.T4 {
         public override void AddRecipes() {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(mod.ItemType("Ash3"), 1);
-			recipe.AddIngredient(ItemID.RainbowRod, 1);
+            recipe.AddIngredient(ItemID.RainbowRod, 1);
             recipe.AddIngredient(ItemID.HallowedBar, 12);
             recipe.AddIngredient(ItemID.SoulofMight, 5);
             recipe.AddIngredient(ItemID.SoulofSight, 5);
@@ -368,12 +368,12 @@ namespace Upgrader.Items.T4 {
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
-	}
+    }
 
     public class AshProjectile4 : ModProjectile {
-		public override void SetStaticDefaults() {
+        public override void SetStaticDefaults() {
             DisplayName.SetDefault("Ash Fireball");
-		}
+        }
 
         public override void AutoStaticDefaults() {
             Main.projectileTexture[projectile.type] = ModLoader.GetTexture("Upgrader/Items/T4/Ash_Projectile");
@@ -405,13 +405,13 @@ namespace Upgrader.Items.T4 {
                 Dust.NewDust(projectile.position, 8, 8, mod.DustType("WeaponDust"), 0f, 0f, 0, Constants.DustColors[0], 1.25f);
             }
         }
-	}
+    }
 
     public class AugurArcanum4 : ModItem {
-		public override void SetStaticDefaults() {
+        public override void SetStaticDefaults() {
             DisplayName.SetDefault("Auger Arcanum");
             Tooltip.SetDefault("[c/31D741:Tier IV]");
-		}
+        }
 
         public override void AutoStaticDefaults() {
             Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T4/Augur_Arcanum");
@@ -421,12 +421,12 @@ namespace Upgrader.Items.T4 {
             item.magic = true;
             item.noMelee = true;
             item.width = 42;
-			item.height = 26;
+            item.height = 26;
             item.scale = 1.5f;
 
             item.useStyle = 5;
 
-			item.shoot = mod.ProjectileType("AugurProjectile4");
+            item.shoot = mod.ProjectileType("AugurProjectile4");
             item.UseSound = SoundID.Item12;
             item.autoReuse = true;
             item.value = Item.buyPrice(gold: 16);
@@ -444,7 +444,7 @@ namespace Upgrader.Items.T4 {
         public override void AddRecipes() {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(mod.ItemType("AugurArcanum3"), 1);
-			recipe.AddIngredient(ItemID.UnholyTrident, 1);
+            recipe.AddIngredient(ItemID.UnholyTrident, 1);
             recipe.AddIngredient(ItemID.HallowedBar, 12);
             recipe.AddIngredient(ItemID.SoulofMight, 5);
             recipe.AddIngredient(ItemID.SoulofSight, 5);
@@ -453,12 +453,12 @@ namespace Upgrader.Items.T4 {
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
-	}
+    }
 
     public class AugurProjectile4 : ModProjectile {
-		public override void SetStaticDefaults() {
+        public override void SetStaticDefaults() {
             DisplayName.SetDefault("Auger Arcanum");
-		}
+        }
 
         public override void AutoStaticDefaults() {
             Main.projectileTexture[projectile.type] = ModLoader.GetTexture("Upgrader/Items/Misc/blank");
@@ -497,5 +497,5 @@ namespace Upgrader.Items.T4 {
                 }
             }
         }
-	}
+    }
 }
