@@ -7,7 +7,7 @@ using Terraria.ObjectData;
 using Terraria.DataStructures;
 
 namespace RuneCarver.Tiles {
-    public class Upgrader : ModTile {
+    public class RuneCarver : ModTile {
         public override void SetDefaults() {
             Main.tileLighted[Type] = true;
             Main.tileFrameImportant[Type] = true;
@@ -44,18 +44,18 @@ namespace RuneCarver.Tiles {
         }
 
         public override void KillMultiTile(int i, int j, int frameX, int frameY) {
-            Item.NewItem(i * 16, j * 16, 32, 16, mod.ItemType("UpgraderItem"));
+            Item.NewItem(i * 16, j * 16, 32, 16, mod.ItemType("RuneCarverItem"));
         }
     }
     
-    public class UpgraderItem : ModItem {
+    public class RuneCarverItem : ModItem {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Rune Carver");
             Tooltip.SetDefault("Used to carve runes, empowering certain weapons");
         }
 
         public override void AutoStaticDefaults() {
-            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Tiles/UpgraderItem");
+            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Tiles/RuneCarverItem");
         }
 
         public override void SetDefaults() {
@@ -69,7 +69,7 @@ namespace RuneCarver.Tiles {
             item.useTime = 10;
             item.useStyle = 1;
             item.consumable = true;
-            item.createTile = mod.TileType("Upgrader");
+            item.createTile = mod.TileType("RuneCarver");
         }
 
         public override void AddRecipes() {
