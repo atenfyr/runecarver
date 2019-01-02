@@ -8,3 +8,7 @@ This mod currently includes:
 * Cellcrusher, a bow which fires two arrows instead of one
 * Ash, a staff which rapidly fires fireballs
 * Auger Arcanum, a railgun which fires a solid laser to cleave your opponents into two
+
+# Credits
+* Atenfyr: programming
+* Geocide: sprites and balancing

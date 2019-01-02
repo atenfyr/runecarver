@@ -8,4 +8,8 @@ This mod currently includes:
     * Ash, a staff which rapidly fires fireballs
     * Auger Arcanum, a railgun which fires a solid laser to cleave your opponents into two
 
+Credits:
+    * Atenfyr: programming
+    * Geocide: sprites and balancing
+
 The source code for this mod is available on Github - https://github.com/atenfyr/runecarver
