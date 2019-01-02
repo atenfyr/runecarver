@@ -3,10 +3,10 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.DataStructures;
-using Upgrader;
+using RuneCarver;
 using Microsoft.Xna.Framework;
 
-namespace Upgrader.Items.T1 {
+namespace RuneCarver.Items.T1 {
     public class Exodium : ModItem {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Exodium");
@@ -14,7 +14,7 @@ namespace Upgrader.Items.T1 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T1/Exodium");
+            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Items/T1/Exodium");
         }
 
         public override void SetDefaults() {
@@ -45,7 +45,7 @@ namespace Upgrader.Items.T1 {
             recipe.AddIngredient(ItemID.Starfury, 1);
             recipe.AddIngredient(ItemID.JungleSpores, 6);
             recipe.AddIngredient(ItemID.Feather, 10);
-            recipe.AddTile(mod.TileType("Upgrader"));
+            recipe.AddTile(mod.TileType("RuneCarver"));
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
@@ -57,7 +57,7 @@ namespace Upgrader.Items.T1 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("Upgrader/Items/T1/Exodium_Projectile");
+            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("RuneCarver/Items/T1/Exodium_Projectile");
         }
 
         public override void SetDefaults() {
@@ -94,7 +94,7 @@ namespace Upgrader.Items.T1 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T1/Exultion");
+            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Items/T1/Exultion");
         }
 
         public override void SetDefaults() {
@@ -124,7 +124,7 @@ namespace Upgrader.Items.T1 {
             recipe.AddIngredient(ItemID.LightsBane, 1);
             recipe.AddIngredient(ItemID.JungleSpores, 6);
             recipe.AddIngredient(ItemID.Feather, 10);
-            recipe.AddTile(mod.TileType("Upgrader"));
+            recipe.AddTile(mod.TileType("RuneCarver"));
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
 
@@ -132,7 +132,7 @@ namespace Upgrader.Items.T1 {
             recipeC.AddIngredient(ItemID.BloodButcherer, 1);
             recipeC.AddIngredient(ItemID.JungleSpores, 6);
             recipeC.AddIngredient(ItemID.Feather, 10);
-            recipeC.AddTile(mod.TileType("Upgrader"));
+            recipeC.AddTile(mod.TileType("RuneCarver"));
             recipeC.SetResult(this, 1);
             recipeC.AddRecipe();
         }
@@ -148,7 +148,7 @@ namespace Upgrader.Items.T1 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("Upgrader/Items/T1/Exultion_Projectile");
+            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("RuneCarver/Items/T1/Exultion_Projectile");
         }
 
         public override void SetDefaults() {
@@ -200,7 +200,7 @@ namespace Upgrader.Items.T1 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T1/Colstice");
+            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Items/T1/Colstice");
         }
 
         public override void SetDefaults() {
@@ -244,7 +244,7 @@ namespace Upgrader.Items.T1 {
             recipe.AddIngredient(ItemID.Boomstick, 1);
             recipe.AddIngredient(ItemID.JungleSpores, 6);
             recipe.AddIngredient(ItemID.Feather, 10);
-            recipe.AddTile(mod.TileType("Upgrader"));
+            recipe.AddTile(mod.TileType("RuneCarver"));
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
@@ -257,7 +257,7 @@ namespace Upgrader.Items.T1 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T1/Cellcrusher");
+            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Items/T1/Cellcrusher");
         }
 
         public override void SetDefaults() {
@@ -301,7 +301,7 @@ namespace Upgrader.Items.T1 {
             recipe.AddIngredient(ItemID.DemonBow, 1);
             recipe.AddIngredient(ItemID.JungleSpores, 6);
             recipe.AddIngredient(ItemID.Feather, 10);
-            recipe.AddTile(mod.TileType("Upgrader"));
+            recipe.AddTile(mod.TileType("RuneCarver"));
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
 
@@ -309,7 +309,7 @@ namespace Upgrader.Items.T1 {
             recipeC.AddIngredient(ItemID.TendonBow, 1);
             recipeC.AddIngredient(ItemID.JungleSpores, 6);
             recipeC.AddIngredient(ItemID.Feather, 10);
-            recipeC.AddTile(mod.TileType("Upgrader"));
+            recipeC.AddTile(mod.TileType("RuneCarver"));
             recipeC.SetResult(this, 1);
             recipeC.AddRecipe();
         }
@@ -323,7 +323,7 @@ namespace Upgrader.Items.T1 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T1/Ash");
+            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Items/T1/Ash");
         }
 
         public override void SetDefaults() {
@@ -357,7 +357,7 @@ namespace Upgrader.Items.T1 {
             recipe.AddIngredient(ItemID.AmberStaff, 1);
             recipe.AddIngredient(ItemID.JungleSpores, 6);
             recipe.AddIngredient(ItemID.Feather, 10);
-            recipe.AddTile(mod.TileType("Upgrader"));
+            recipe.AddTile(mod.TileType("RuneCarver"));
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
@@ -369,7 +369,7 @@ namespace Upgrader.Items.T1 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("Upgrader/Items/T1/Ash_Projectile");
+            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("RuneCarver/Items/T1/Ash_Projectile");
         }
 
         public override void SetDefaults() {
@@ -407,7 +407,7 @@ namespace Upgrader.Items.T1 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T1/Augur_Arcanum");
+            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Items/T1/Augur_Arcanum");
         }
 
         public override void SetDefaults() {
@@ -439,7 +439,7 @@ namespace Upgrader.Items.T1 {
             recipe.AddIngredient(ItemID.SpaceGun, 1);
             recipe.AddIngredient(ItemID.JungleSpores, 6);
             recipe.AddIngredient(ItemID.Feather, 10);
-            recipe.AddTile(mod.TileType("Upgrader"));
+            recipe.AddTile(mod.TileType("RuneCarver"));
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
@@ -451,7 +451,7 @@ namespace Upgrader.Items.T1 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("Upgrader/Items/Misc/blank");
+            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("RuneCarver/Items/Misc/blank");
         }
 
         public override void SetDefaults() {

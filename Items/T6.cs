@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
 
-namespace Upgrader.Items.T6 {
+namespace RuneCarver.Items.T6 {
     public class Exodium6 : ModItem {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Exodium");
@@ -13,7 +13,7 @@ namespace Upgrader.Items.T6 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T6/Exodium");
+            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Items/T6/Exodium");
         }
 
         public override void SetDefaults() {
@@ -43,9 +43,9 @@ namespace Upgrader.Items.T6 {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(mod.ItemType("Exodium5"), 1);
             recipe.AddIngredient(ItemID.Meowmere, 1);
-            recipe.AddRecipeGroup("Upgrader:AnyLunarFragment", 5);
+            recipe.AddRecipeGroup("RuneCarver:AnyLunarFragment", 5);
             recipe.AddIngredient(ItemID.LunarBar, 12);
-            recipe.AddTile(mod.TileType("Upgrader"));
+            recipe.AddTile(mod.TileType("RuneCarver"));
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
@@ -57,7 +57,7 @@ namespace Upgrader.Items.T6 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("Upgrader/Items/T6/Exodium_Projectile");
+            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("RuneCarver/Items/T6/Exodium_Projectile");
         }
 
         public override void SetDefaults() {
@@ -94,7 +94,7 @@ namespace Upgrader.Items.T6 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T6/Exultion");
+            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Items/T6/Exultion");
         }
 
         public override void SetDefaults() {
@@ -123,9 +123,9 @@ namespace Upgrader.Items.T6 {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(mod.ItemType("Exultion5"), 1);
             recipe.AddIngredient(ItemID.SolarEruption, 1);
-            recipe.AddRecipeGroup("Upgrader:AnyLunarFragment", 5);
+            recipe.AddRecipeGroup("RuneCarver:AnyLunarFragment", 5);
             recipe.AddIngredient(ItemID.LunarBar, 12);
-            recipe.AddTile(mod.TileType("Upgrader"));
+            recipe.AddTile(mod.TileType("RuneCarver"));
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
@@ -141,7 +141,7 @@ namespace Upgrader.Items.T6 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("Upgrader/Items/T6/Exultion_Projectile");
+            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("RuneCarver/Items/T6/Exultion_Projectile");
         }
 
         public override void SetDefaults() {
@@ -193,7 +193,7 @@ namespace Upgrader.Items.T6 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T6/Colstice");
+            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Items/T6/Colstice");
         }
 
         public override void SetDefaults() {
@@ -236,9 +236,9 @@ namespace Upgrader.Items.T6 {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(mod.ItemType("Colstice5"), 1);
             recipe.AddIngredient(ItemID.VortexBeater, 1);
-            recipe.AddRecipeGroup("Upgrader:AnyLunarFragment", 5);
+            recipe.AddRecipeGroup("RuneCarver:AnyLunarFragment", 5);
             recipe.AddIngredient(ItemID.LunarBar, 12);
-            recipe.AddTile(mod.TileType("Upgrader"));
+            recipe.AddTile(mod.TileType("RuneCarver"));
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
@@ -251,7 +251,7 @@ namespace Upgrader.Items.T6 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T6/Cellcrusher");
+            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Items/T6/Cellcrusher");
         }
 
         public override void SetDefaults() {
@@ -294,9 +294,9 @@ namespace Upgrader.Items.T6 {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(mod.ItemType("Cellcrusher5"), 1);
             recipe.AddIngredient(ItemID.Phantasm, 1);
-            recipe.AddRecipeGroup("Upgrader:AnyLunarFragment", 5);
+            recipe.AddRecipeGroup("RuneCarver:AnyLunarFragment", 5);
             recipe.AddIngredient(ItemID.LunarBar, 12);
-            recipe.AddTile(mod.TileType("Upgrader"));
+            recipe.AddTile(mod.TileType("RuneCarver"));
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
@@ -310,7 +310,7 @@ namespace Upgrader.Items.T6 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T6/Ash");
+            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Items/T6/Ash");
         }
 
         public override void SetDefaults() {
@@ -341,9 +341,9 @@ namespace Upgrader.Items.T6 {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(mod.ItemType("Ash5"), 1);
             recipe.AddIngredient(ItemID.NebulaBlaze, 1);
-            recipe.AddRecipeGroup("Upgrader:AnyLunarFragment", 5);
+            recipe.AddRecipeGroup("RuneCarver:AnyLunarFragment", 5);
             recipe.AddIngredient(ItemID.LunarBar, 12);
-            recipe.AddTile(mod.TileType("Upgrader"));
+            recipe.AddTile(mod.TileType("RuneCarver"));
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
@@ -355,7 +355,7 @@ namespace Upgrader.Items.T6 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("Upgrader/Items/T6/Ash_Projectile");
+            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("RuneCarver/Items/T6/Ash_Projectile");
         }
 
         public override void SetDefaults() {
@@ -393,7 +393,7 @@ namespace Upgrader.Items.T6 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T6/Augur_Arcanum");
+            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Items/T6/Augur_Arcanum");
         }
 
         public override void SetDefaults() {
@@ -424,9 +424,9 @@ namespace Upgrader.Items.T6 {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(mod.ItemType("AugurArcanum5"), 1);
             recipe.AddIngredient(ItemID.LastPrism, 1);
-            recipe.AddRecipeGroup("Upgrader:AnyLunarFragment", 5);
+            recipe.AddRecipeGroup("RuneCarver:AnyLunarFragment", 5);
             recipe.AddIngredient(ItemID.LunarBar, 12);
-            recipe.AddTile(mod.TileType("Upgrader"));
+            recipe.AddTile(mod.TileType("RuneCarver"));
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
@@ -438,7 +438,7 @@ namespace Upgrader.Items.T6 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("Upgrader/Items/T1/Ash");
+            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("RuneCarver/Items/T1/Ash");
         }
 
         public override void SetDefaults() {

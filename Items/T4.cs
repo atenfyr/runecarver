@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
 
-namespace Upgrader.Items.T4 {
+namespace RuneCarver.Items.T4 {
     public class Exodium4 : ModItem {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Exodium");
@@ -13,7 +13,7 @@ namespace Upgrader.Items.T4 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T4/Exodium");
+            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Items/T4/Exodium");
         }
 
         public override void SetDefaults() {
@@ -47,7 +47,7 @@ namespace Upgrader.Items.T4 {
             recipe.AddIngredient(ItemID.SoulofMight, 5);
             recipe.AddIngredient(ItemID.SoulofSight, 5);
             recipe.AddIngredient(ItemID.SoulofFright, 5);
-            recipe.AddTile(mod.TileType("Upgrader"));
+            recipe.AddTile(mod.TileType("RuneCarver"));
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
@@ -59,7 +59,7 @@ namespace Upgrader.Items.T4 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("Upgrader/Items/T4/Exodium_Projectile");
+            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("RuneCarver/Items/T4/Exodium_Projectile");
         }
 
         public override void SetDefaults() {
@@ -96,7 +96,7 @@ namespace Upgrader.Items.T4 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T4/Exultion");
+            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Items/T4/Exultion");
         }
 
         public override void SetDefaults() {
@@ -129,7 +129,7 @@ namespace Upgrader.Items.T4 {
             recipe.AddIngredient(ItemID.SoulofMight, 5);
             recipe.AddIngredient(ItemID.SoulofSight, 5);
             recipe.AddIngredient(ItemID.SoulofFright, 5);
-            recipe.AddTile(mod.TileType("Upgrader"));
+            recipe.AddTile(mod.TileType("RuneCarver"));
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
@@ -145,7 +145,7 @@ namespace Upgrader.Items.T4 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("Upgrader/Items/T4/Exultion_Projectile");
+            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("RuneCarver/Items/T4/Exultion_Projectile");
         }
 
         public override void SetDefaults() {
@@ -197,7 +197,7 @@ namespace Upgrader.Items.T4 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T4/Colstice");
+            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Items/T4/Colstice");
         }
 
         public override void SetDefaults() {
@@ -244,7 +244,7 @@ namespace Upgrader.Items.T4 {
             recipe.AddIngredient(ItemID.SoulofMight, 5);
             recipe.AddIngredient(ItemID.SoulofSight, 5);
             recipe.AddIngredient(ItemID.SoulofFright, 5);
-            recipe.AddTile(mod.TileType("Upgrader"));
+            recipe.AddTile(mod.TileType("RuneCarver"));
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
@@ -257,7 +257,7 @@ namespace Upgrader.Items.T4 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T4/Cellcrusher");
+            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Items/T4/Cellcrusher");
         }
 
         public override void SetDefaults() {
@@ -304,7 +304,7 @@ namespace Upgrader.Items.T4 {
             recipe1.AddIngredient(ItemID.SoulofMight, 5);
             recipe1.AddIngredient(ItemID.SoulofSight, 5);
             recipe1.AddIngredient(ItemID.SoulofFright, 5);
-            recipe1.AddTile(mod.TileType("Upgrader"));
+            recipe1.AddTile(mod.TileType("RuneCarver"));
             recipe1.SetResult(this, 1);
             recipe1.AddRecipe();
 
@@ -315,7 +315,7 @@ namespace Upgrader.Items.T4 {
             recipe2.AddIngredient(ItemID.SoulofMight, 5);
             recipe2.AddIngredient(ItemID.SoulofSight, 5);
             recipe2.AddIngredient(ItemID.SoulofFright, 5);
-            recipe2.AddTile(mod.TileType("Upgrader"));
+            recipe2.AddTile(mod.TileType("RuneCarver"));
             recipe2.SetResult(this, 1);
             recipe2.AddRecipe();
         }
@@ -329,7 +329,7 @@ namespace Upgrader.Items.T4 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T4/Ash");
+            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Items/T4/Ash");
         }
 
         public override void SetDefaults() {
@@ -364,7 +364,7 @@ namespace Upgrader.Items.T4 {
             recipe.AddIngredient(ItemID.SoulofMight, 5);
             recipe.AddIngredient(ItemID.SoulofSight, 5);
             recipe.AddIngredient(ItemID.SoulofFright, 5);
-            recipe.AddTile(mod.TileType("Upgrader"));
+            recipe.AddTile(mod.TileType("RuneCarver"));
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
@@ -376,7 +376,7 @@ namespace Upgrader.Items.T4 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("Upgrader/Items/T4/Ash_Projectile");
+            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("RuneCarver/Items/T4/Ash_Projectile");
         }
 
         public override void SetDefaults() {
@@ -414,7 +414,7 @@ namespace Upgrader.Items.T4 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Items/T4/Augur_Arcanum");
+            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Items/T4/Augur_Arcanum");
         }
 
         public override void SetDefaults() {
@@ -449,7 +449,7 @@ namespace Upgrader.Items.T4 {
             recipe.AddIngredient(ItemID.SoulofMight, 5);
             recipe.AddIngredient(ItemID.SoulofSight, 5);
             recipe.AddIngredient(ItemID.SoulofFright, 5);
-            recipe.AddTile(mod.TileType("Upgrader"));
+            recipe.AddTile(mod.TileType("RuneCarver"));
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
@@ -461,7 +461,7 @@ namespace Upgrader.Items.T4 {
         }
 
         public override void AutoStaticDefaults() {
-            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("Upgrader/Items/Misc/blank");
+            Main.projectileTexture[projectile.type] = ModLoader.GetTexture("RuneCarver/Items/Misc/blank");
         }
 
         public override void SetDefaults() {

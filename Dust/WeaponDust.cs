@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Upgrader.Dusts {
+namespace RuneCarver.Dusts {
     /*
         green - new Color(49, 215, 65, 25)
         yellow - new Color(243, 255, 103, 25)
@@ -15,7 +15,7 @@ namespace Upgrader.Dusts {
      */
     class WeaponDust : ModDust {
         public override bool Autoload(ref string name, ref string texture) {
-            texture = "Upgrader/Dust/default";
+            texture = "RuneCarver/Dust/default";
             return true;
         }
 

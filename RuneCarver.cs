@@ -3,9 +3,9 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Upgrader {
-    class Upgrader : Mod {
-        public Upgrader() {
+namespace RuneCarver {
+    class RuneCarver : Mod {
+        public RuneCarver() {
             Properties = new ModProperties() {
                 Autoload = true,
                 AutoloadGores = true,
@@ -20,7 +20,7 @@ namespace Upgrader {
                 ItemID.FragmentSolar,
                 ItemID.FragmentStardust
             });
-            RecipeGroup.RegisterGroup("Upgrader:AnyLunarFragment", group);
+            RecipeGroup.RegisterGroup("RuneCarver:AnyLunarFragment", group);
         }
     }
 }

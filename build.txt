@@ -4,5 +4,5 @@ displayName = Rune Carver
 hideCode = true
 hideResources = true
 includeSource = false
-buildIgnore = *.csproj, *.user, obj\*, bin\*, .vscode\*
+buildIgnore = *.csproj, *.user, obj\*, bin\*
 includePDB = true

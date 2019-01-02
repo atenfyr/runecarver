@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 using Terraria.ObjectData;
 using Terraria.DataStructures;
 
-namespace Upgrader.Tiles {
+namespace RuneCarver.Tiles {
     public class Upgrader : ModTile {
         public override void SetDefaults() {
             Main.tileLighted[Type] = true;
@@ -55,7 +55,7 @@ namespace Upgrader.Tiles {
         }
 
         public override void AutoStaticDefaults() {
-            Main.itemTexture[item.type] = ModLoader.GetTexture("Upgrader/Tiles/UpgraderItem");
+            Main.itemTexture[item.type] = ModLoader.GetTexture("RuneCarver/Tiles/UpgraderItem");
         }
 
         public override void SetDefaults() {
