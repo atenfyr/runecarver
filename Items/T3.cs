@@ -37,6 +37,7 @@ namespace RuneCarver.Items.T3 {
             item.useAnimation = 24;
             item.useTime = 24;
             item.shootSpeed = 6f;
+            item.crit = 21;
         }
 
         public override void AddRecipes() {
@@ -130,6 +131,7 @@ namespace RuneCarver.Items.T3 {
             item.useTime = 24;
             item.shootSpeed = 5.6f;
             item.knockBack = 6f;
+            item.crit = 10;
         }
 
         public override void AddRecipes() {
@@ -239,11 +241,12 @@ namespace RuneCarver.Items.T3 {
             item.maxStack = 1;
             item.rare = 4;
 
-            item.damage = 15;
+            item.damage = 14;
             item.knockBack = 1.6f;
             item.useAnimation = 28;
             item.useTime = 30;
             item.shootSpeed = 20f;
+            item.crit = 5;
         }
 
         public override Vector2? HoldoutOffset() {
@@ -304,6 +307,7 @@ namespace RuneCarver.Items.T3 {
             item.useAnimation = 24;
             item.useTime = 24;
             item.shootSpeed = 20f;
+            item.crit = 15;
         }
 
         public override Vector2? HoldoutOffset() {
@@ -370,12 +374,13 @@ namespace RuneCarver.Items.T3 {
             item.maxStack = 1;
             item.rare = 4;
 
-            item.damage = 39;
+            item.damage = 42;
             item.knockBack = 3f;
             item.mana = 6;
             item.useAnimation = 10;
             item.useTime = 10;
             item.shootSpeed = 10f;
+            item.crit = 5;
         }
 
         public override void AddRecipes() {
@@ -461,6 +466,7 @@ namespace RuneCarver.Items.T3 {
             item.mana = 16;
             item.useAnimation = 40;
             item.useTime = 40;
+            item.crit = 16;
         }
 
         public override void AddRecipes() {
