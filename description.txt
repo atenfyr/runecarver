@@ -12,4 +12,5 @@ Credits:
     * Atenfyr: programming
     * Geocide: sprites and balancing
 
+You can find more information on recipes and such here - https://github.com/atenfyr/runecarver/blob/master/README.md
 The source code for this mod is available on Github - https://github.com/atenfyr/runecarver
